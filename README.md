@@ -7,6 +7,7 @@ Git Commands
 
 | Command | Description |
 | ------- | ----------- |
+| ```bash git init``` | Initialize a Local Git Repository |
 | `git init` | Initialize a local Git repository |
 | `git clone ssh://git@github.com/[username]/[repository-name].git` | Create a local copy of a remote repository |
 

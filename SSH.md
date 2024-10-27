@@ -1,20 +1,18 @@
 ## Install the OpenSSH server:
-`sudo apt install openssh-server`
-
-`sudo systemctl start ssh`
-
-`sudo systemctl enable ssh`
-
-`sudo systemctl status ssh`
-
-## configuration file located at:
-
-`cd /etc/ssh/sshd_config`
-
+```bash
+    sudo apt install openssh-server
+    sudo systemctl start ssh
+    sudo systemctl enable ssh
+    sudo systemctl status ssh
+```
 ## SSH from another machine, use:
-
-`ssh username@ip_address`
-
+```bash
+    ssh username@ip_address
+```
+## configuration file located at:
+```bash
+    cd /etc/ssh/sshd_config
+```
 ## Verify SSH Daemon Configuration:
 **Ensure PasswordAuthentication and ChallengeResponseAuthentication are set to yes**
 
@@ -23,12 +21,18 @@
 `ChallengeResponseAuthentication yes`
 
 ## Restart the SSH service
-sudo systemctl restart ssh
+```bash
+    sudo systemctl restart ssh
+```
 
 ## Check if the user account exists
-`sudo cat /etc/passwd`
+
+```bash
+    sudo cat /etc/passwd
+```
 
 ## Ensure port 22 is allowed through the firewall (UFW)
-`sudo ufw allow 22/tcp`
-
-`sudo ufw reload`
+```bash
+    sudo ufw reload
+    sudo ufw allow 22/tcp
+```

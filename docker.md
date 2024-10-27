@@ -1,8 +1,9 @@
 ## Check if Docker is Installed via Package Manager
 
-|`docker --version`|
+| `docker --version` |
 
-|`dpkg -l | grep docker`|  or
+| `dpkg -l | grep docker` |  or
+
 `apt list --installed | grep docker`
 
 

@@ -15,6 +15,7 @@ ssh username@ip_address
 ## Verify SSH Daemon Configuration:
 
 # Ensure PasswordAuthentication and ChallengeResponseAuthentication are set to yes
+
 PasswordAuthentication yes
 ChallengeResponseAuthentication yes
 
